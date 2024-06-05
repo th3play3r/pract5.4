@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>math</title>
+</head>
+<body>
+<center><input type="button" value="Розгалужений обчислювальний процес" onclick="x()"></center>
+<script>
+    var xmin = prompt('enter xmin','');
+    var xmax = prompt('enter xmax','');
+    var W;
+    function x(){
+            for (var i=xmax;i>=xmin;i=i-2){
+                if(i<-4){
+                    W = Math.abs(i)+Math.tan(i);
+                }
+                if(i===-4){
+                    W = 23;
+                }
+                if(i>-4){
+                    W = Math.cos(i)+i;
+                }
+                alert("Рузультат розрахунків при аргументі "+i+" = "+W);
+            }
+        }
+</script>
+
+</body>
+</html>
